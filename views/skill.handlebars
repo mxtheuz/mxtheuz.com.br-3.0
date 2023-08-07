@@ -1,0 +1,21 @@
+
+
+
+<h1 class="my-4">
+  Skill {{this.skill.id}}
+</h1>
+
+<form action="/update" method="POST">
+  <input type="hidden" class="form-control mb-2" name="skill_id" value="{{this.skill.id}}">
+  <input type="text" class="form-control mb-2" name="skill_name" value="{{this.skill.name}}" placeholder="Nome">
+  <input type="text" class="form-control mb-2" name="skill_level" value="{{this.skill.level}}" placeholder="Nível">
+  <input type="text" class="form-control mb-2" name="skill_description" value="{{this.skill.description}}" placeholder="Descrição">
+  <button type="submit" class="btn btn-primary mb-2">Salvar alterações</button>
+</form>
+
+<form action="/delete" method="POST">
+  <input type="hidden" name="id" value="{{this.skill.id}}">
+  <input type="submit" value="Excluir" class="btn btn-danger">
+</form>
+
+<a href="/skills">Retornar</a>

@@ -1,0 +1,31 @@
+<style>
+    .title {
+      margin: 5rem 0 0;
+      color: #4F22F2;
+    }
+    .login-btn {
+      width: 100%;
+      background-color: #FFF;
+      border: 1px solid #4F22F2;
+      padding: 0.5rem;
+      color: #4F22F2;
+      border-radius: 5px;
+    }
+</style>
+
+<div class="d-flex flex-column align-items-center">
+  <h1 class="title">
+    Auth
+  </h1>
+
+  <form class="w-50" action="/login" method="POST">
+    <input type="email" class="form-control my-2" name="email" placeholder="E-mail" />
+    <input type="password" class="form-control mb-2" name="password" placeholder="Password" />
+    <button type="submit" class="login-btn">Login</button>
+    {{#if err}}
+      <div class="alert alert-danger mt-3" role="alert">
+        Authentication failed!
+      </div>
+    {{/if}}
+  </form>
+</div>
