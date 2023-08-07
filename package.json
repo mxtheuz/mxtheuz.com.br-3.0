@@ -1,6 +1,6 @@
 {
-  "name": "mxtheuz.com.br.v2",
-  "version": "2.2.1",
+  "name": "mxtheuz.com.br.v3",
+  "version": "3.0.1",
   "description": "",
   "scripts": {
     "start": "ts-node src/app.ts"
